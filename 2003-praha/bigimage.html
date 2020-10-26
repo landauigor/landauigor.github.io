@@ -1,0 +1,16 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<SCRIPT language=javascript>
+function load_image()
+{
+	var s = window.location.hash;
+	s = s.substr(1);
+	document.getElementsByName("img")[0].src = s.replace("/", "_") + "-big.jpg";
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="load_image()" ondblclick="self.close()">
+<IMG name=img border=3>
+</BODY>
+</HTML>
